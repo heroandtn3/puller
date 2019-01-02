@@ -62,9 +62,6 @@ function getCurrentBranch(gitDirPath) {
   return execSync(`git branch | cut -d ' ' -f2`, { cwd: gitDirPath }).toString().trim();
 }
 
-const BASE_PATHS = ['/home/lap12404/workspace/common', '/home/lap12404/workspace/mp3'];
-
-
 function pull(basePath) {
   consola.info('Scanning git directories in path:', basePath);
 
@@ -86,7 +83,8 @@ function pull(basePath) {
       consola.error(`Failed (${err.status ? err.status : '-1'}):`, err.message);
     }
   });
-
 }
+
+const BASE_PATHS = ['/home/lap12404/workspace/common', '/home/lap12404/workspace/mp3'];
 
 BASE_PATHS.forEach(pull);
