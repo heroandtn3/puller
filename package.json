@@ -1,0 +1,23 @@
+{
+  "name": "puller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "consola": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heroandtn3/puller.git"
+  },
+  "author": "Sang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heroandtn3/puller/issues"
+  },
+  "homepage": "https://github.com/heroandtn3/puller#readme"
+}
